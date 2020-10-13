@@ -1,0 +1,84 @@
+body {
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.yellow {
+	background-color: #fdfa57;
+}
+
+.blue {
+	background-color: #037dc4;
+}
+
+.quote {
+	font-size: 26px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+}
+.character {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.image {
+	width: 300px;
+	height: 480px;
+	object-fit: contain;
+}
+
+.left,
+.right {
+	display: flex;
+	flex-direction: column;
+}
+
+.left .image {
+	align-self: flex-start;
+}
+
+.right .image {
+	align-self: flex-end;
+}
+
+.left p,
+.left .reload {
+	color: #fdfa57;
+}
+
+.right p,
+.right .reload {
+	color: #037dc4;
+}
+
+.reload {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+}
+
+.reload .fa-retweet {
+	font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+	.quote {
+		margin-top: 5rem;
+	}
+
+	.image {
+		width: 200px;
+		object-fit: contain;
+	}
+}
